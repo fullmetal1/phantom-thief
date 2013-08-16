@@ -17,7 +17,7 @@ define c = Character('Silver Crow', color="#ffffff")
 label start:
 
 
-#1 May, 10:05 AM - Airport
+"1 May, 10:05 AM - Airport"
 
 "Hmm... Where did I put that card..." 
 
@@ -65,47 +65,51 @@ t "Oh, sure yeah... just over there."
 
 t "Hey..." 
 
-#Choice:
-#1. Ask if she wants to go together 2. Be awkward and wait for the next bus.
+menu:
 
-t "I'm heading there myself, shall we go together?"
+    "Ask if she wants to go together":
 
-"???" "Oh, hmm..."
+        t "I'm heading there myself, shall we go together?"
 
-t "... I Don't bite, I swear."
+        "???" "Oh, hmm..."
 
-"???" "Haha, well... alright, I don't see why not."
+        t "... I Don't bite, I swear."
 
-t "The name's Tyler by the way. Tyler Fox"
+        "???" "Haha, well... alright, I don't see why not."
 
-k "I'm Kathy, Nice to meet you. Kathy... Cat"
+        t "The name's Tyler by the way. Tyler Fox"
 
-"Kathy... Cat? of all things..." 
+        k "I'm Kathy, Nice to meet you. Kathy... Cat"
 
-t "What a coincidence, our last names are both animal labels."
+        "Kathy... Cat? of all things..." 
 
-k "I know right? How weird is that!"
+        t "What a coincidence, our last names are both animal labels."
 
-t "...so... why come to this country?"
+        k "I know right? How weird is that!"
 
-k "Oh you know... Just holidaying and stuff... I came to meet a friend here who's a big fan of a band that I like. We're definitely going to go to their concert on the 5th of may."
+        t "...so... why come to this country?"
 
-t "ah... I see, sounds great. I'm here because-"
+        k "Oh you know... Just holidaying and stuff... I came to meet a friend here who's a big fan of a band that I like. We're definitely going to go to their concert on the 5th of may."
 
-k "Hey, Hold up, I'm going to go toilet for a bit okay?"
+        t "ah... I see, sounds great. I'm here because-"
 
-t "Oh... uh... sure"
+        k "Hey, Hold up, I'm going to go toilet for a bit okay?"
 
-k "Here hold my stuff, and you better not leave without me okay?"
+        t "Oh... uh... sure"
 
-t "okay..."
+        k "Here hold my stuff, and you better not leave without me okay?"
 
-t "There she goes..."
+        t "okay..."
 
-t "Hmm... There's a lock on all of her luggages, that's rather excessive... Oh? There's a magazine sticking out of the side pocket, Guess I'll take a read while waiting."
+        t "There she goes..."
 
-#- Magazine retrieved-
+        t "Hmm... There's a lock on all of her luggages, that's rather excessive... Oh? There's a magazine sticking out of the side pocket, Guess I'll take a read while waiting."
 
+        "Magazine retrieved"
+
+    "Be awkward and wait for the next bus.":
+
+        ""
 #Screen Fade out
 
 #1 May 11:00 AM - Bus ride (bus sound start)
@@ -170,7 +174,9 @@ k "well... show me the picture then!"
 
 t "Well... no harm done I suppose..."
 
-#Here it is. - Picture of Selena added into inventory
+"Here it is."
+
+#Picture of Selena added into inventory
 
 k "Well... it looks like you've got it all planned out huh?"
 
@@ -252,45 +258,47 @@ t "Thanks."
 
 j "Is there anything else you I can do for you sir? I'm here to answer any questions you have."
 
-#Ask about tourist attractions
+menu:
 
-t "So... What's there to do here?"
+    "Ask about tourist attractions":
 
-j "Well sir... Truth is I don't really know what's so great about this place."
+        t "So... What's there to do here?"
 
-t "Wha..."
+        j "Well sir... Truth is I don't really know what's so great about this place."
 
-j "But from what I've heard from other tourists.... most are either here for the Silver Crow or the Bagelboys. Oh... but not so much theBagel boys anymore."
+        t "Wha..."
 
-"Not anymore? Hmm... I'm not really interested to begin with... should I pry further?"
+        j "But from what I've heard from other tourists.... most are either here for the Silver Crow or the Bagelboys. Oh... but not so much theBagel boys anymore."
 
-t "About these Bagelboys..."
+        "Not anymore? Hmm... I'm not really interested to begin with... should I pry further?"
 
-j "They're a popular band consisting of 4 male members. They Debut last year, and are due to perform in 3 days... at the South concert hall."
+    "About these Bagelboys...":
 
-t "Ah... Okay..."
+        j "They're a popular band consisting of 4 male members. They Debut last year, and are due to perform in 3 days... at the South concert hall."
 
-j "Word has it though, one of them was involved a scandal yesterday and the band members are fighting each other... now the concert might be cancelled due to the whole situation."
+        t "Ah... Okay..."
 
-"Oh my... I wonder if Kathy has found out about this..."
+        j "Word has it though, one of them was involved a scandal yesterday and the band members are fighting each other... now the concert might be cancelled due to the whole situation."
 
-t "Silver Crow! That's what I'm here for."
+        "Oh my... I wonder if Kathy has found out about this..."
 
-j "Ah... I see, Well... Silver Crow is still losing."
+    "Silver Crow! That's what I'm here for.":
 
-t "Losing?"
+        j "Ah... I see, Well... Silver Crow is still losing."
 
-j "Yeah, I've been counting. You're here for Silver Crow, so that adds one to 13 people here for Silver Crow and 41 Here for BagelBoys."
+        t "Losing?"
 
-t "...Right."
+        j "Yeah, I've been counting. You're here for Silver Crow, so that adds one to 13 people here for Silver Crow and 41 Here for BagelBoys."
 
-t "Nah I'll be alright, Which way to the elevator?"
+        t "...Right."
 
-j "Turn left on that corner sir, I've got to warn you though, the elevator is quite slow."
+    "Nah I'll be alright, Which way to the elevator?":
 
-t "No worries, See ya."
+        j "Turn left on that corner sir, I've got to warn you though, the elevator is quite slow."
 
-j "Have a pleasant stay sir."
+        t "No worries, See ya."
+
+        j "Have a pleasant stay sir."
 
 #Screen Fade out
 
@@ -445,39 +453,41 @@ t "H... Hey now... No one has seen the Silver Crow, he could be a Shorty for all
 
 m "No... I've seen him, I let my guard down the first time he appeared... Finally, I've been stationed at the place he's targeted once again... This time I swear I will capture him."
 
-t "So... you've seen him!? Wow, what's he like?"
+menu:
 
-m "Pay attention! I just said he looks like you."
+    "So... you've seen him!? Wow, what's he like?":
 
-t "But... I mean... how does he dress?"
+        m "Pay attention! I just said he looks like you."
 
-m "Well... He wore a silver masquerade mask that covers the eyes, and a silver cloak..."
+        t "But... I mean... how does he dress?"
 
-t "Odd... wouldn't he attract attention like that?"
+        m "Well... He wore a silver masquerade mask that covers the eyes, and a silver cloak..."
 
-m "He always clouds himself with a weird white smoke bomb, that's why no one knows where he comes  and escapes from."
+        t "Odd... wouldn't he attract attention like that?"
 
-t "So... what's the plan on catching silver crow?"
+        m "He always clouds himself with a weird white smoke bomb, that's why no one knows where he comes  and escapes from."
 
-m "That's classified information boy! You think I could just give out information like that to a Silver crow suspect???"
+    "So... what's the plan on catching silver crow?":
 
-t "Silver Crow?...suspect? Who? Me?"
+        m "That's classified information boy! You think I could just give out information like that to a Silver crow suspect???"
 
-m "Don't play dumb with me, I could have you detained now and foil all your plans, but I'd rather catch you in action. Mmm... yess... How satisfying it will be when I have your hands cuffed..."
+        t "Silver Crow?...suspect? Who? Me?"
 
-"Ooookay...."
+        m "Don't play dumb with me, I could have you detained now and foil all your plans, but I'd rather catch you in action. Mmm... yess... How satisfying it will be when I have your hands cuffed..."
 
-t "I thought the museum that hosts the biggest diamond in the world would be bigger..."
+        "Ooookay...."
 
-m "This museum? It's an antique, I'm surprised The diamond jewel is set for display here."
+    "I thought the museum that hosts the biggest diamond in the world would be bigger...":
 
-t "Maybe it's a fake?"
+        m "This museum? It's an antique, I'm surprised The diamond jewel is set for display here."
 
-m "No, it's real. I think the owner is a big fan of Silver Crow and she doesn't really care if Silver Crow steals the diamond."
+        t "Maybe it's a fake?"
 
-m "She didn't even bother with hiring security, Me and other security features were hired by the insurance company... boy they were sweating bullets when Silver crow announced the next target."
+        m "No, it's real. I think the owner is a big fan of Silver Crow and she doesn't really care if Silver Crow steals the diamond."
 
-"Talk about dedication... This one is worth millions..." 
+        m "She didn't even bother with hiring security, Me and other security features were hired by the insurance company... boy they were sweating bullets when Silver crow announced the next target."
+
+        "Talk about dedication... This one is worth millions..." 
 
 t "Well... thanks for the information Monica"
 
@@ -916,9 +926,15 @@ m "-and of course I caught you at the scene of the crime, even though you do not
 
 t "No... It can't be... Is there... nothing else I can do?"
 
-#Choice:
+menu:
 
-#1. Accept your fate 2. There's a contradiction here...
+    "Accept your fate":
+    
+        ""
+    
+    "There's a contradiction here..."
+
+        ""
 
 t "No."
 
