@@ -17,18 +17,18 @@ init -1 python hide:
 
     ## These control the width and height of the screen.
 
-    config.screen_width = 1053
-    config.screen_height = 636
+    config.screen_width = 1136
+    config.screen_height = 640
 
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
 
-    config.window_title = u"A Ren'Py Game"
+    config.window_title = u"The Phantom Thief"
 
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
-    config.name = "A Ren'Py Game"
-    config.version = "0.0"
+    config.name = "The pantom tjief"
+    config.version = "0.001"
 
     #########################################
     # Themes
@@ -45,43 +45,43 @@ init -1 python hide:
         ## Color scheme: Colorblind
                                     
         ## The color of an idle widget face.
-        widget = "#898989",
+        widget = "#000000FF",
 
         ## The color of a focused widget face.
-        widget_hover = "#464646",
+        widget_hover = "#000000FF",
 
         ## The color of the text in a widget.
-        widget_text = "#CCCCCC",
+        widget_text = "#B8B8B8",
 
         ## The color of the text in a selected widget. (For
         ## example, the current value of a preference.)
-        widget_selected = "#F2F2F2",
+        widget_selected = "#C8C8C8",
 
         ## The color of a disabled widget face. 
-        disabled = "#898989",
+        disabled = "#898989FF",
 
         ## The color of disabled widget text.
-        disabled_text = "#666666",
+        disabled_text = "#666666FF",
 
         ## The color of informational labels.
         label = "#c2c2c2",
 
         ## The color of a frame containing widgets.
-        frame = "#252525",
+        frame = "#000000FF",
 
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        mm_root = "#393939",
+        mm_root = "titlescreen.png",
 
         ## The background of the game menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        gm_root = "#393939",
+        gm_root = "gm_overlay.png",
 
         ## If this is True, the in-game window is rounded. If False,
         ## the in-game window is square.
-        rounded_window = False,
+        # rounded_window = False,
 
         ## And we're done with the theme. The theme will customize
         ## various styles, so if we want to change them, we should
@@ -135,10 +135,11 @@ init -1 python hide:
     ## the number is interpreted as a fraction of the size of the
     ## displayable or screen.
 
-    # style.mm_menu_frame.xpos = 0.5
+    # style.mm_menu_frame.xpos = 0.0
     # style.mm_menu_frame.xanchor = 0.5
-    # style.mm_menu_frame.ypos = 0.75
+    # style.mm_menu_frame.ypos = 0.0
     # style.mm_menu_frame.yanchor = 0.5
+    style.mm_button_text.size = 35
 
 
     #########################################
@@ -150,7 +151,9 @@ init -1 python hide:
 
     ## The default size of text.
 
-    # style.default.size = 22
+    style.default.size = 22
+    
+    style.gm_nav_button_text.size = 35
 
     ## Note that these only change the size of some of the text. Other
     ## buttons have their own styles.

@@ -184,16 +184,14 @@ screen main_menu:
     # The main menu buttons.
     frame:
         style_group "mm"
-        xalign .98
-        yalign .98
+        xalign .5
+        yalign .85
+        
+        
 
         has vbox
 
-        textbutton _("Start Game") action Start()
-        textbutton _("Load Game") action ShowMenu("load")
-        textbutton _("Preferences") action ShowMenu("preferences")
-        textbutton _("Help") action Help()
-        textbutton _("Quit") action Quit(confirm=False)
+        textbutton _("Start") action Start()
 
 init -2 python:
 
@@ -216,19 +214,16 @@ screen navigation:
     # The various buttons.
     frame:
         style_group "gm_nav"
-        xalign .98
-        yalign .98
+        xalign .49
+        yalign .45
         
         has vbox
 
-        textbutton _("Return") action Return()
-        textbutton _("Preferences") action ShowMenu("preferences")
-        textbutton _("Save Game") action ShowMenu("save")
+        textbutton _("Resume") action Return()
+        textbutton _("New Game") action Start()
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Main Menu") action MainMenu()
-        textbutton _("Help") action Help()
-        textbutton _("Quit") action Quit()
-
+        
 init -2 python:
     style.gm_nav_button.size_group = "gm_nav"
     
@@ -309,7 +304,6 @@ screen save:
     tag menu
 
     use navigation
-    use file_picker
 
 screen load:
 
@@ -317,7 +311,6 @@ screen load:
     tag menu
 
     use navigation
-    use file_picker
 
 init -2 python:
     style.file_picker_frame = Style(style.menu_frame)
