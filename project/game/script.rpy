@@ -3,6 +3,16 @@
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
 
+image brian = "brian.png"
+image bg intro = "intro.png"
+image security = "security.png"
+image bg terminal = "terminal.png"
+image tyler = "tyler.png"
+image tyler angry = "tylerangry.png"
+image tyler baggage = "tylerbaggage.png"
+image tyler pushed = "tylerpushed.png"
+image tyler shocked = "tylershocked.png"
+
 # Declare characters used by this game.
 define t = Character('Tyler', color="#ffffff")
 define j = Character('Jimbo', color="#ffffff")
@@ -19,13 +29,30 @@ label start:
 
 "1 May, 10:05 AM - Airport"
 
+scene bg intro
+with Dissolve(.5)
+
+pause 3.0
+
+scene bg terminal
+show tyler baggage
+with Dissolve(.25)
+
 "Hmm... Where did I put that card..." 
 
+show tyler shocked
+with Dissolve(.25)
+
 t "Oh..."
+
+show tyler
+with Dissolve(.25)
 
 "Hi, My name is -"
 
 "???" "..."
+
+show tyler pushed
 
 t "...?!" 
 
@@ -37,11 +64,20 @@ t "...?!"
 
 "Again?"
 
+show tyler angry
+with Dissolve(.25)
+
 t "...Where are they going in such a hurry?" 
+
+show tyler shocked
+with Dissolve(.25)
 
 t "Hey... What's this?"
 
 "Someone dropped their passport. - Passport retrieved."
+
+show tyler
+with Dissolve(.25)
 
 t "...That guy must have dropped it after bumping into me... I Guess I should go and return it before going to the bus stand."
 
@@ -932,7 +968,7 @@ menu:
     
         ""
     
-    "There's a contradiction here..."
+    "There's a contradiction here...":
 
         ""
 
