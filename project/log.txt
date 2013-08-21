@@ -1,4 +1,4 @@
-Sun Aug 18 01:36:18 2013
+Tue Aug 20 17:36:49 2013
 Linux-3.8.0-26-generic-x86_64-with-debian-wheezy-sid
 Ren'Py 6.15.7.374
 The pantom tjief 0.001
@@ -206,8 +206,12 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.014000 seconds.
-- Frame drawn at 0.021000 seconds.
-- Frame drawn at 0.024000 seconds.
-- Frame drawn at 0.028000 seconds.
-- 0.028000 seconds to render 5 frames.
+- Frame drawn at 0.013000 seconds.
+- Frame drawn at 0.019000 seconds.
+- Frame drawn at 0.023000 seconds.
+- Frame drawn at 0.030000 seconds.
+- 0.030000 seconds to render 5 frames.
+Deallocating textures.
+Done deallocating textures.
+About to quit GL.
+Finished quit GL.

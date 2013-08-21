@@ -4,6 +4,7 @@
 # eg. image eileen happy = "eileen_happy.png"
 
 image brian = "brian.png"
+image bg black = "#000000"
 image bg intro = "intro.png"
 image security = "security.png"
 image bg terminal = "terminal.png"
@@ -11,6 +12,7 @@ image tyler = "tyler.png"
 image tyler angry = "tylerangry.png"
 image tyler baggage = "tylerbaggage.png"
 image tyler pushed = "tylerpushed.png"
+image tyler pushedflip = im.Flip("tylerpushed.png", horizontal=True)
 image tyler shocked = "tylershocked.png"
 
 # Declare characters used by this game.
@@ -26,8 +28,9 @@ define c = Character('Silver Crow', color="#ffffff")
 # The game starts here.
 label start:
 
+scene bg black
 
-"1 May, 10:05 AM - Airport"
+centered "1 May, 10:05 AM - Airport"
 
 scene bg intro
 with Dissolve(.5)
@@ -54,17 +57,28 @@ with Dissolve(.25)
 
 show tyler pushed
 
+show brian
+
 t "...?!" 
 
 "What the?"
 
 "???" "Move it kid"
 
+hide brian
+with Dissolve(.25)
+
 t "...?!" 
+
+show security
+show tyler pushedflip
+
 
 "Again?"
 
 show tyler angry
+with Dissolve(.25)
+hide security
 with Dissolve(.25)
 
 t "...Where are they going in such a hurry?" 
@@ -76,7 +90,7 @@ t "Hey... What's this?"
 
 "Someone dropped their passport. - Passport retrieved."
 
-show tyler
+show tyler baggage
 with Dissolve(.25)
 
 t "...That guy must have dropped it after bumping into me... I Guess I should go and return it before going to the bus stand."

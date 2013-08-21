@@ -1,26 +1,17 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While executing init code:
-  File "game/options.rpy", line 10, in script
-  File "game/options.rpy", line 55, in python
-TypeError: outline() got an unexpected keyword argument 'mm_root'
+While running game code:
+Exception: 7 Renders are alive at shutdown. This is probably a memory leak bug in Ren'Py.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/bootstrap.py", line 265, in bootstrap
     renpy.main.main()
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/main.py", line 269, in main
-    game.context().run(node)
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/execution.py", line 288, in run
-    node.execute()
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/ast.py", line 718, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/python.py", line 1297, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/options.rpy", line 55, in <module>
-    mm_root = "titlescreen.png",
-TypeError: outline() got an unexpected keyword argument 'mm_root'
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/main.py", line 353, in main
+    renpy.display.render.check_at_shutdown()
+  File "render.pyx", line 91, in renpy.display.render.check_at_shutdown (gen/renpy.display.render.c:1474)
+Exception: 7 Renders are alive at shutdown. This is probably a memory leak bug in Ren'Py.
 
 Linux-3.8.0-26-generic-x86_64-with-debian-wheezy-sid
 Ren'Py 6.15.7.374

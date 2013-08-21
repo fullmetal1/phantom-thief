@@ -304,6 +304,8 @@ screen save:
     tag menu
 
     use navigation
+    # use file_picker
+    # FILE PICKER ALWAYS SEEMS TO GO IN GAME MENU
 
 screen load:
 
@@ -311,6 +313,8 @@ screen load:
     tag menu
 
     use navigation
+    # use file_picker
+    # FILE PICKER ALWAYS SEEMS TO GO IN GAME MENU
 
 init -2 python:
     style.file_picker_frame = Style(style.menu_frame)

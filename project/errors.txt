@@ -2,6 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/options.rpy", line 81: non-keyword arg after keyword arg
+File "game/script.rpy", line 71: end of line expected.
+    show im.Flip("tylerpushed", horizontal=True)
+           ^
 
 Ren'Py Version: Ren'Py 6.15.7.374
