@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 71: end of line expected.
-    show im.Flip("tylerpushed", horizontal=True)
-           ^
+File "game/script.rpy", line 319: expected ':' not found.
+    label butlerquestions
+                         ^
 
 Ren'Py Version: Ren'Py 6.15.7.374

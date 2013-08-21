@@ -1,17 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-Exception: 7 Renders are alive at shutdown. This is probably a memory leak bug in Ren'Py.
+  File "game/script.rpy", line 94, in script
+  File "game/script.rpy", line 94, in python
+AttributeError: 'float' object has no attribute 'get_placement'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/bootstrap.py", line 265, in bootstrap
-    renpy.main.main()
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/main.py", line 353, in main
-    renpy.display.render.check_at_shutdown()
-  File "render.pyx", line 91, in renpy.display.render.check_at_shutdown (gen/renpy.display.render.c:1474)
-Exception: 7 Renders are alive at shutdown. This is probably a memory leak bug in Ren'Py.
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/execution.py", line 288, in run
+    node.execute()
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/ast.py", line 1106, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/python.py", line 1331, in py_eval
+    return eval(py_compile(source, 'eval'), globals, locals)
+  File "game/script.rpy", line 94, in <module>
+    hide passport with zoomout(.15)
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/curry.py", line 38, in __call__
+    **dict(self.kwargs.items() + kwargs.items()))
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/display/movetransition.py", line 331, in OldMoveTransition
+    rv = merge_slide(old_widget, new_widget)
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/display/movetransition.py", line 176, in merge_slide
+    old_pos = position(old)
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/display/movetransition.py", line 32, in position
+    xpos, ypos, xanchor, yanchor, _xoffset, _yoffset, _subpixel = d.get_placement()
+AttributeError: 'float' object has no attribute 'get_placement'
 
 Linux-3.8.0-26-generic-x86_64-with-debian-wheezy-sid
 Ren'Py 6.15.7.374

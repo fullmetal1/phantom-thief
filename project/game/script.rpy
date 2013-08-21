@@ -6,6 +6,7 @@
 image brian = "brian.png"
 image bg black = "#000000"
 image bg intro = "intro.png"
+image passport = "passport.png"
 image security = "security.png"
 image bg terminal = "terminal.png"
 image tyler = "tyler.png"
@@ -32,32 +33,28 @@ scene bg black
 
 centered "1 May, 10:05 AM - Airport"
 
-scene bg intro
-with Dissolve(.5)
+scene bg intro with Dissolve(.5)
 
 pause 3.0
 
-scene bg terminal
-show tyler baggage
-with Dissolve(.25)
+scene bg terminal with Dissolve (.5)
+show tyler baggage with Dissolve(.25)
 
 "Hmm... Where did I put that card..." 
 
-show tyler shocked
-with Dissolve(.25)
+show tyler shocked with Dissolve(.25)
 
 t "Oh..."
 
-show tyler
-with Dissolve(.25)
+show tyler with Dissolve(.25)
 
 "Hi, My name is -"
 
 "???" "..."
 
-show tyler pushed
-
-show brian
+show tyler pushed with Dissolve(.15):
+    linear .15 xalign 0.85
+show brian with Dissolve(.15)
 
 t "...?!" 
 
@@ -65,35 +62,43 @@ t "...?!"
 
 "???" "Move it kid"
 
-hide brian
-with Dissolve(.25)
-
+hide brian with Dissolve(.25)
+show tyler pushed:
+    linear .25 xalign 0.5
+    
 t "...?!" 
 
-show security
-show tyler pushedflip
+show tyler pushedflip:
+    linear .15 xalign -0.05
+show security with Dissolve(.15)
 
 
 "Again?"
 
-show tyler angry
-with Dissolve(.25)
-hide security
-with Dissolve(.25)
+hide security with Dissolve(.25)
+show tyler angry with Dissolve(.25):
+    linear .25 xalign 0.5
+
 
 t "...Where are they going in such a hurry?" 
 
-show tyler shocked
-with Dissolve(.25)
+show tyler shocked with Dissolve(.25)
 
 t "Hey... What's this?"
 
+show passport with Dissolve(.25):
+    yalign .5 xalign .5
+
 "Someone dropped their passport. - Passport retrieved."
 
-show tyler baggage
-with Dissolve(.25)
+show passport:
+    linear .75 xalign 2.0 yalign -1.0
+show tyler baggage with Dissolve(.25)
 
 t "...That guy must have dropped it after bumping into me... I Guess I should go and return it before going to the bus stand."
+
+hide passport
+show tyler with Dissolve(.25)
 
 "Now where was I... oh yes. My name is Tyler Fox... I'm a recent graduate student majoring in criminal psychology."
 
@@ -108,6 +113,8 @@ t "...That guy must have dropped it after bumping into me... I Guess I should go
 "I plan to go to the museum where they the artifact will be displayed and be part of the witness when he appears."
 
 t "Hmm... It would be great if I could capture him in action..."
+
+show tyler shocked with Dissolve(.25)
 
 "???" "Excuse me, do you know where the bus stand is?"
 
@@ -160,9 +167,10 @@ menu:
     "Be awkward and wait for the next bus.":
 
         ""
-#Screen Fade out
+        
+scene bg black with Dissolve(.5)
 
-#1 May 11:00 AM - Bus ride (bus sound start)
+centered "1 May 11:00 AM - Bus ride (bus sound start)"
 
 k "Thanks for waiting for me :]"
 
@@ -308,6 +316,8 @@ t "Thanks."
 
 j "Is there anything else you I can do for you sir? I'm here to answer any questions you have."
 
+label butlerquestions1:
+
 menu:
 
     "Ask about tourist attractions":
@@ -321,6 +331,8 @@ menu:
         j "But from what I've heard from other tourists.... most are either here for the Silver Crow or the Bagelboys. Oh... but not so much theBagel boys anymore."
 
         "Not anymore? Hmm... I'm not really interested to begin with... should I pry further?"
+        
+        jump butlerquestions1
 
     "About these Bagelboys...":
 
@@ -331,6 +343,8 @@ menu:
         j "Word has it though, one of them was involved a scandal yesterday and the band members are fighting each other... now the concert might be cancelled due to the whole situation."
 
         "Oh my... I wonder if Kathy has found out about this..."
+        
+        jump butlerquestions1
 
     "Silver Crow! That's what I'm here for.":
 
@@ -341,6 +355,8 @@ menu:
         j "Yeah, I've been counting. You're here for Silver Crow, so that adds one to 13 people here for Silver Crow and 41 Here for BagelBoys."
 
         t "...Right."
+        
+        jump butlerquestions1
 
     "Nah I'll be alright, Which way to the elevator?":
 
@@ -503,6 +519,8 @@ t "H... Hey now... No one has seen the Silver Crow, he could be a Shorty for all
 
 m "No... I've seen him, I let my guard down the first time he appeared... Finally, I've been stationed at the place he's targeted once again... This time I swear I will capture him."
 
+label monicaquestions1:
+
 menu:
 
     "So... you've seen him!? Wow, what's he like?":
@@ -517,6 +535,8 @@ menu:
 
         m "He always clouds himself with a weird white smoke bomb, that's why no one knows where he comes  and escapes from."
 
+        jump monicaquestions1
+
     "So... what's the plan on catching silver crow?":
 
         m "That's classified information boy! You think I could just give out information like that to a Silver crow suspect???"
@@ -527,6 +547,8 @@ menu:
 
         "Ooookay...."
 
+        jump monicaquestions1
+        
     "I thought the museum that hosts the biggest diamond in the world would be bigger...":
 
         m "This museum? It's an antique, I'm surprised The diamond jewel is set for display here."
@@ -538,6 +560,10 @@ menu:
         m "She didn't even bother with hiring security, Me and other security features were hired by the insurance company... boy they were sweating bullets when Silver crow announced the next target."
 
         "Talk about dedication... This one is worth millions..." 
+
+        jump monicaquestions1
+        
+#Gotta break the chain Alcatrez
 
 t "Well... thanks for the information Monica"
 
