@@ -1,11 +1,24 @@
 ﻿# You can place the script of your game in this file.
 
+init:
+    $ left = Position(xpos=.1, xanchor='.1')
+    $ center = Position(xpos=.5, xanchor='.5')
+    $ right = Position(xpos=.9, xanchor='.9')
+    
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
 
 image brian = "brian.png"
 image bg black = "#000000"
 image bg intro = "intro.png"
+image bg shower1 = "shower1.png"
+image bg shower2 = "shower2.png"
+image bg shower3 = "shower3.png"
+image bg shower4 = "shower4.png"
+image bg shower5 = "shower5.png"
+image kathy = "kathy.png"
+image kathy angry = "kathyangry.png"
+image kathy frustrated = "kathyfrustrated.png"
 image passport = "passport.png"
 image security = "security.png"
 image bg terminal = "terminal.png"
@@ -114,9 +127,12 @@ show tyler with Dissolve(.25)
 
 t "Hmm... It would be great if I could capture him in action..."
 
-show tyler shocked with Dissolve(.25)
+show tyler shocked at left with Dissolve(.25)
+show kathy at right with Dissolve(.25)
 
 "???" "Excuse me, do you know where the bus stand is?"
+
+show tyler with Dissolve(.25)
 
 t "Oh, sure yeah... just over there."
 
@@ -137,8 +153,12 @@ menu:
         t "The name's Tyler by the way. Tyler Fox"
 
         k "I'm Kathy, Nice to meet you. Kathy... Cat"
+        
+        show tyler shocked with Dissolve(.25)
 
         "Kathy... Cat? of all things..." 
+        
+        show tyler with Dissolve(.25)
 
         t "What a coincidence, our last names are both animal labels."
 
@@ -149,14 +169,22 @@ menu:
         k "Oh you know... Just holidaying and stuff... I came to meet a friend here who's a big fan of a band that I like. We're definitely going to go to their concert on the 5th of may."
 
         t "ah... I see, sounds great. I'm here because-"
+        
+        show tyler shocked with Dissolve(.25)
 
         k "Hey, Hold up, I'm going to go toilet for a bit okay?"
 
         t "Oh... uh... sure"
 
+        show kathy angry with Dissolve(.25)
+
         k "Here hold my stuff, and you better not leave without me okay?"
 
         t "okay..."
+
+        show tyler with Dissolve(.25)
+        show kathy with Dissolve(.25)
+        hide kathy with moveoutright
 
         t "There she goes..."
 
@@ -170,9 +198,14 @@ menu:
         
 scene bg black with Dissolve(.5)
 
-centered "1 May 11:00 AM - Bus ride (bus sound start)"
+centered "1 May 11:00 AM - Bus ride" 
 
-k "Thanks for waiting for me :]"
+#bus sound start
+
+show kathy at right
+show tyler at left
+
+k "Thanks for waiting for me"
 
 t "No problem"
 
@@ -190,21 +223,29 @@ t "I'm actually going to a friend I've met online who is also interested in this
 
 k "haha, yeah, I've heard about Silver crow but I've never really paid enough attention to the details."
 
+show tyler shocked with Dissolve(.25)
+
 t "Oh... yeah, sorry for the nerd talk... "
+
+show tyler with Dissolve(.25)
 
 k "So have you met this online friend before?"
 
 t "Oh no, I've never even seen a picture of her, she is quite shy you see."
 
+show kathy frustrated with Dissolve(.25)
+
 k "Ooh... you like those type do you?"
 
 t "Oh no no, we are strictly friends! We're just meeting  because of our matching interests."
+
+show kathy with Dissolve(.25)
 
 k "Well... tell me more about her! what's her name?"
 
 "Why is she so interested?" 
 
-t "...Her name is Selena Bella, She just loves The Silver crow. Apparently it's because she loved  phantom thief fictional characters as a child. You know... like... magic kaito and Lupin and stuff..."
+t "...Her name is Selena Bella, She just loves The Silver crow. Apparently it's because she loved phantom thief fictional characters as a child. You know... like... magic kaito and Lupin and stuff..."
 
 k "What's... that?"
 
@@ -386,11 +427,15 @@ t "Mmmm... I wish my own room at home smells like this."
 
 t "...Click?"
 
-#Event: Kathy getting out of shower.
+"She locked me out... Getting dressed probably"
 
-t "She locked me out... Getting dressed probably"
+scene bg shower1 with Dissolve (1)
+scene bg shower2 with Dissolve (1)
+scene bg shower3 with Dissolve (1)
+scene bg shower4 with Dissolve (1)
+scene bg shower5 with Dissolve (1)
 
-t "Before I realize it, She was standing in front of me with a mean look in her eye."
+"Before I realize it, She was standing in front of me with a mean look in her eye."
 
 k "You pervert!... How did you get into my room? I should call the security and have you removed!"
 
