@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 319: expected ':' not found.
-    label butlerquestions
-                         ^
+File "game/script.rpy", line 421: expected menuitem
+    if question == 7
+    ^
 
 Ren'Py Version: Ren'Py 6.15.7.374

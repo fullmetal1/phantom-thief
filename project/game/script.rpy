@@ -1,9 +1,10 @@
 ﻿# You can place the script of your game in this file.
 
 init:
-    $ left = Position(xpos=.1, xanchor='.1')
-    $ center = Position(xpos=.5, xanchor='.5')
-    $ right = Position(xpos=.9, xanchor='.9')
+    $ left = Position(xpos=0.1, xanchor=0.1,)
+    $ center = Position(xpos=0.5, xanchor=0.5,)
+    $ right = Position(xpos=0.9, xanchor=0.9,)
+    $ question = 0
     
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
@@ -127,8 +128,8 @@ show tyler with Dissolve(.25)
 
 t "Hmm... It would be great if I could capture him in action..."
 
-show tyler shocked at left with Dissolve(.25)
-show kathy at right with Dissolve(.25)
+show tyler shocked at left with Dissolve (.25)
+show kathy at right with Dissolve (.25)
 
 "???" "Excuse me, do you know where the bus stand is?"
 
@@ -323,6 +324,8 @@ k "?"
 
 t "Ah... Nothing, I just forgot to return this passport I found at the airport... I Guess I'll return it later."
 
+show kathy frustrated with Dissolve(.25)
+
 k "!? Where did you find it?"
 
 t "On the ground? Someone must have dropped it."
@@ -330,6 +333,8 @@ t "On the ground? Someone must have dropped it."
 k "... You should return it"
 
 t "Yeah I will"
+
+show kathy with Dissolve(.25)
 
 k "Shall I return it for you?"
 
@@ -339,15 +344,20 @@ t "Oh no, don't worry about it. I'll return it later."
 
 k "Ah... We're here."
 
-#Screen Fade out
-
+scene bg black with Dissolve(.5)
 #Scene change - Hotel Lobby
+
+show tyler with Dissolve(.25)
 
 t "Mmm... Not too shabby..."
 
 "I wonder what my room will look like"
 
+show tyler shocked with Dissolve(.25)
+
 j "Hello sir, My name is Jimbo, how may I be of assistance?"
+
+show tyler with Dissolve(.25)
 
 t "Ah yes... I've booked a room here. Here's my passport."
 
@@ -363,6 +373,8 @@ menu:
 
     "Ask about tourist attractions":
 
+        label butlerquestions11:
+
         t "So... What's there to do here?"
 
         j "Well sir... Truth is I don't really know what's so great about this place."
@@ -373,9 +385,16 @@ menu:
 
         "Not anymore? Hmm... I'm not really interested to begin with... should I pry further?"
         
-        jump butlerquestions1
+        $ question = question | 1
+        if question == 7:
+            jump butlerquestion1finish
+            
+        else:
+            jump butlerquestions1
 
     "About these Bagelboys...":
+
+        label butlerquestions12:
 
         j "They're a popular band consisting of 4 male members. They Debut last year, and are due to perform in 3 days... at the South concert hall."
 
@@ -385,9 +404,16 @@ menu:
 
         "Oh my... I wonder if Kathy has found out about this..."
         
-        jump butlerquestions1
+        $ question = question | 2
+        if question == 7:
+            jump butlerquestion1finish
+            
+        else:
+            jump butlerquestions1
 
     "Silver Crow! That's what I'm here for.":
+
+        label butlerquestions13:
 
         j "Ah... I see, Well... Silver Crow is still losing."
 
@@ -397,9 +423,32 @@ menu:
 
         t "...Right."
         
-        jump butlerquestions1
+        $ question = question | 4
+        if question == 7:
+            jump butlerquestion1finish
+            
+        else:
+            jump butlerquestions1
+
+label butlerquestion1finish:
+
+menu:
+
+    "Ask about tourist attractions":
+
+        jump butlerquestions11
+
+    "About these Bagelboys...":
+
+        jump butlerquestions12
+
+    "Silver Crow! That's what I'm here for.":
+
+        jump butlerquestions13
 
     "Nah I'll be alright, Which way to the elevator?":
+
+        $ question = 0
 
         j "Turn left on that corner sir, I've got to warn you though, the elevator is quite slow."
 
@@ -430,10 +479,15 @@ t "...Click?"
 "She locked me out... Getting dressed probably"
 
 scene bg shower1 with Dissolve (1)
+$ renpy.pause(1.0)
 scene bg shower2 with Dissolve (1)
+$ renpy.pause(1.0)
 scene bg shower3 with Dissolve (1)
+$ renpy.pause(.5)
 scene bg shower4 with Dissolve (1)
+$ renpy.pause(.25)
 scene bg shower5 with Dissolve (1)
+$ renpy.pause(.5)
 
 "Before I realize it, She was standing in front of me with a mean look in her eye."
 

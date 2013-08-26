@@ -1,18 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-Exception: 15 Renders are alive at shutdown. This is probably a memory leak bug in Ren'Py.
+  File "game/script.rpy", line 428, in script
+ScriptError: could not find label 'butlerquestion1finish'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\Downloads\renpy-6.15.7-sdk\renpy\bootstrap.py", line 265, in bootstrap
-    renpy.main.main()
-  File "D:\Downloads\renpy-6.15.7-sdk\renpy\main.py", line 353, in main
-    renpy.display.render.check_at_shutdown()
-  File "render.pyx", line 91, in renpy.display.render.check_at_shutdown (gen\renpy.display.render.c:1474)
-Exception: 15 Renders are alive at shutdown. This is probably a memory leak bug in Ren'Py.
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/execution.py", line 288, in run
+    node.execute()
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/ast.py", line 1374, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/script.py", line 537, in lookup
+    raise ScriptError("could not find label '%s'." % str(label))
+ScriptError: could not find label 'butlerquestion1finish'.
 
-Windows-7-6.1.7601-SP1
+Linux-3.8.0-29-generic-x86_64-with-debian-wheezy-sid
 Ren'Py 6.15.7.374
 The pantom tjief 0.001
