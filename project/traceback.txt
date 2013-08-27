@@ -1,19 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 428, in script
-ScriptError: could not find label 'butlerquestion1finish'.
+  File "game/script.rpy", line 550, in script
+  File "game/script.rpy", line 550, in python
+Exception: Not a displayable: 0.25
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/execution.py", line 288, in run
     node.execute()
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/ast.py", line 1374, in execute
-    rv = renpy.game.script.lookup(target)
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/script.py", line 537, in lookup
-    raise ScriptError("could not find label '%s'." % str(label))
-ScriptError: could not find label 'butlerquestion1finish'.
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/ast.py", line 963, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/ast.py", line 928, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/python.py", line 1331, in py_eval
+    return eval(py_compile(source, 'eval'), globals, locals)
+  File "game/script.rpy", line 550, in <module>
+    show tyler at center(.25)
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/curry.py", line 38, in __call__
+    **dict(self.kwargs.items() + kwargs.items()))
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/display/layout.py", line 259, in __init__
+    self.add(child)
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/display/layout.py", line 115, in add
+    child = renpy.easy.displayable(d)
+  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/easy.py", line 129, in displayable
+    raise Exception("Not a displayable: %r" % (d,))
+Exception: Not a displayable: 0.25
 
 Linux-3.8.0-29-generic-x86_64-with-debian-wheezy-sid
 Ren'Py 6.15.7.374

@@ -20,6 +20,7 @@ image bg shower5 = "shower5.png"
 image kathy = "kathy.png"
 image kathy angry = "kathyangry.png"
 image kathy frustrated = "kathyfrustrated.png"
+image kathy pouting = "kathypouting.png"
 image passport = "passport.png"
 image security = "security.png"
 image bg terminal = "terminal.png"
@@ -43,15 +44,15 @@ define c = Character('Silver Crow', color="#ffffff")
 # The game starts here.
 label start:
 
-scene bg black
+scene bg black with Dissolve(1)
 
 centered "1 May, 10:05 AM - Airport"
 
-scene bg intro with Dissolve(.5)
+scene bg intro with Dissolve(1)
 
 pause 3.0
 
-scene bg terminal with Dissolve (.5)
+scene bg terminal with Dissolve (1)
 show tyler baggage with Dissolve(.25)
 
 "Hmm... Where did I put that card..." 
@@ -197,7 +198,7 @@ menu:
 
         ""
         
-scene bg black with Dissolve(.5)
+scene bg black with Dissolve(1)
 
 centered "1 May 11:00 AM - Bus ride" 
 
@@ -344,7 +345,7 @@ t "Oh no, don't worry about it. I'll return it later."
 
 k "Ah... We're here."
 
-scene bg black with Dissolve(.5)
+scene bg black with Dissolve(1)
 #Scene change - Hotel Lobby
 
 show tyler with Dissolve(.25)
@@ -495,15 +496,27 @@ k "You pervert!... How did you get into my room? I should call the security and 
 
 t" But... This is MY room, See? I have a card key."
 
+scene bg black with Dissolve(.25)
+show tyler at left with Dissolve(.25)
+show kathy angry at right with Dissolve(.25)
+
 k "Oh...? let me see... your card key says that you are in room 319. That's next door, you idiot."
 
-t "What? No way, you're the one mistaken, see...? (Kathy fades, reveal room 316)"
+t "What? No way, you're the one mistaken, see...?" 
+
+#(Kathy fades, reveal room 316)
+
+show tyler shocked with Dissolve(.25)
 
 "...Wha? 316?? but... but... I checked! I double checked!"
+
+show kathy frustrated with Dissolve(.25)
 
 k "...Okay mister... I don't care how you got in, but you owe me... you owe me BIG."
 
 t "Okay okay, it's my fault, I'm sorry."
+
+show kathy pouting with Dissolve(.25)
 
 k "Sorry ain't gonna cut it Tyler."
 
@@ -529,15 +542,27 @@ k "But I want to go now!"
 
 t "Come on, we're all tired, and I don't want to make my friend mad.... help me out please?"
 
+show kathy with Dissolve(.25)
+
 k "... Fine, tomorrow then. I'll wait for you at the lobby at 9:00 AM, you better not be late."
+
+hide kathy with moveoutright
+show tyler at center:
+    linear .35 xalign 0.5
 
 t"Phew... I must be jetlagged to mix up the rooms like that, I should get a quick snooze before meeting Selena"
 
-#Screen Fade out
+scene bg black with Dissolve(1)
 
-#1 May 3:20 PM - Museum
+centered "1 May 3:20 PM - Museum"
+
+show tyler angry with Dissolve(.25)
 
 "Crud, I overslept I hope Selena is still there."
+
+show tyler angry at left:
+    linear .35 xalign .1
+show tyler shocked with Dissolve(.25)
 
 "???" "Are you Tyler?"
 
@@ -545,7 +570,10 @@ t "Are you... Selena?"
 
 s "Yup, like my beanie?"
 
+show tyler with Dissolve(.25)
+
 "Well... someone that looks as good as advertised on photo for once"
+
 t "Uh... Sure do! Sorry I'm late."
 
 s "Late? Oh no worries! I would have been here waiting for Silver Crow to appear whether you were here or not."

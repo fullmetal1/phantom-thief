@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 421: expected menuitem
-    if question == 7
+File "game/script.rpy", line 551: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    linear .5 xalign 0.5
     ^
 
 Ren'Py Version: Ren'Py 6.15.7.374
