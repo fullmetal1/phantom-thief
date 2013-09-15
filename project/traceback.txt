@@ -1,33 +1,62 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 550, in script
-  File "game/script.rpy", line 550, in python
-Exception: Not a displayable: 0.25
+  File "game/script.rpy", line 519, in script
+IOError: Couldn't find file 'kathypouting.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/execution.py", line 288, in run
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\execution.py", line 288, in run
     node.execute()
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/ast.py", line 963, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/ast.py", line 928, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/python.py", line 1331, in py_eval
-    return eval(py_compile(source, 'eval'), globals, locals)
-  File "game/script.rpy", line 550, in <module>
-    show tyler at center(.25)
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/curry.py", line 38, in __call__
-    **dict(self.kwargs.items() + kwargs.items()))
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/display/layout.py", line 259, in __init__
-    self.add(child)
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/display/layout.py", line 115, in add
-    child = renpy.easy.displayable(d)
-  File "/home/alex/Documents/Work/phantom-thief/renpy-6.15.7-sdk/renpy/easy.py", line 129, in displayable
-    raise Exception("Not a displayable: %r" % (d,))
-Exception: Not a displayable: 0.25
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\ast.py", line 1110, in execute
+    renpy.exports.with_statement(trans, paired)
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\exports.py", line 946, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\display\core.py", line 1531, in do_with
+    clear=clear)
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\display\core.py", line 1853, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\display\core.py", line 2165, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\display\core.py", line 1420, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 365, in renpy.display.render.render_screen (gen\renpy.display.render.c:4568)
+  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2033)
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\display\layout.py", line 521, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2291)
+  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2033)
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\display\transition.py", line 362, in render
+    top = render(self.new_widget, width, height, st, at)
+  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2291)
+  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2033)
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\display\layout.py", line 521, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2291)
+  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2033)
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\display\layout.py", line 521, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2291)
+  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2033)
+  File "accelerator.pyx", line 109, in renpy.display.accelerator.transform_render (gen\renpy.display.accelerator.c:1298)
+  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2033)
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\display\image.py", line 164, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\display\image.py", line 54, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2291)
+  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2033)
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\display\im.py", line 465, in render
+    im = cache.get(self)
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\display\im.py", line 196, in get
+    surf = image.load()
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\display\im.py", line 509, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\loader.py", line 411, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'kathypouting.png'.
 
-Linux-3.8.0-29-generic-x86_64-with-debian-wheezy-sid
+Windows-7-6.1.7601-SP1
 Ren'Py 6.15.7.374
 The pantom tjief 0.001
