@@ -54,7 +54,9 @@ define c = Character('Silver Crow', color="#ffffff")
 
 # The game starts here.
 label start:
-    
+
+# opening animation
+
 scene bg opening1 with Dissolve (.5)
 
 scene bg opening2 with Dissolve (.5)
@@ -64,7 +66,6 @@ scene bg opening3 with Dissolve (.5)
 scene bg opening4 with Dissolve (.5)
 
 scene bg opening5 with Dissolve (.5)
-
     
 scene bg black with Dissolve(1)
 
