@@ -1,4 +1,4 @@
-Sun Sep 15 21:11:26 2013
+Mon Sep 16 13:59:16 2013
 Windows-7-6.1.7601-SP1
 Ren'Py 6.15.7.374
 The pantom tjief 0.001
@@ -148,18 +148,13 @@ Performance test:
 
 Windowed mode.
 Screen sizes: virtual=(1136, 640) physical=(1136, 640)
-- Frame drawn at 0.093000 seconds.
-- Frame drawn at 0.111000 seconds.
-- Frame drawn at 0.122000 seconds.
-- Frame drawn at 0.126000 seconds.
-- 0.126000 seconds to render 5 frames.
-The window was minimized.
-The window was restored.
-
-Windowed mode.
-Screen sizes: virtual=(1136, 640) physical=(1136, 640)
-The window was minimized.
-The window was restored.
+- Frame drawn at 0.096000 seconds.
+- Frame drawn at 0.119000 seconds.
+- Frame drawn at 0.128000 seconds.
+- Frame drawn at 0.133000 seconds.
+- 0.133000 seconds to render 5 frames.
+Deallocating textures.
+DonThe window was restored.
 
 Windowed mode.
 Screen sizes: virtual=(1136, 640) physical=(1136, 640)

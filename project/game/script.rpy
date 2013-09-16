@@ -23,6 +23,11 @@ image bg hotelroom = "hotelroom.png"
 image bg door319 = "door319.png"
 image bg museum = "museum.png"
 image bg door316 = "door316.png"
+image bg opening1 = "opening1.png"
+image bg opening2 = "opening2.png"
+image bg opening3 = "opening3.png"
+image bg opening4 = "opening4.png"
+image bg opening5 = "opening5.png"
 image kathy = "kathy.png"
 image kathy angry = "kathyangry.png"
 image kathy frustrated = "kathyfrustrated.png"
@@ -49,7 +54,18 @@ define c = Character('Silver Crow', color="#ffffff")
 
 # The game starts here.
 label start:
+    
+scene bg opening1 with Dissolve (.5)
 
+scene bg opening2 with Dissolve (.5)
+
+scene bg opening3 with Dissolve (.5)
+
+scene bg opening4 with Dissolve (.5)
+
+scene bg opening5 with Dissolve (.5)
+
+    
 scene bg black with Dissolve(1)
 
 centered "1 May, 10:05 AM - Airport"
