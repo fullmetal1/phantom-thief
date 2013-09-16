@@ -1,7 +1,7 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 519, in script
+  File "game/script.rpy", line 540, in script
 IOError: Couldn't find file 'kathypouting.png'.
 
 -- Full Traceback ------------------------------------------------------------

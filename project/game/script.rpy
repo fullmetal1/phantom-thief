@@ -17,6 +17,12 @@ image bg shower2 = "shower2.png"
 image bg shower3 = "shower3.png"
 image bg shower4 = "shower4.png"
 image bg shower5 = "shower5.png"
+image bg bus = "bus.png"
+image bg lobby = "lobby.png"
+image bg hotelroom = "hotelroom.png"
+image bg door319 = "door319.png"
+image bg museum = "museum.png"
+image bg door316 = "door316.png"
 image kathy = "kathy.png"
 image kathy angry = "kathyangry.png"
 image kathy frustrated = "kathyfrustrated.png"
@@ -204,6 +210,8 @@ centered "1 May 11:00 AM - Bus ride"
 
 #bus sound start
 
+scene bg bus
+
 show kathy at right
 show tyler at left
 
@@ -348,6 +356,8 @@ k "Ah... We're here."
 scene bg black with Dissolve(1)
 #Scene change - Hotel Lobby
 
+scene bg lobby
+
 show tyler with Dissolve(.25)
 
 t "Mmm... Not too shabby..."
@@ -461,13 +471,23 @@ menu:
 
 #Scene change - Room door 319
 
+scene bg black with Dissolve(5)
+
+scene bg black with Dissolve(3)
+
+scene bg door319
+
 "Finally... took me 15 minutes just to get up here cause some dumb kid pressed all the buttons in the elevator"
 
 t "Hm...? The cardkey is not working... Oh wait... the door is unlocked. That's really strange... Did the cleaners forget to lock the door or something?"
 
 #Screen Fade out
 
+scene bg black with Dissolve(3)
+
 #Scene change - Hotel Room
+
+scene bg hotelroom
 
 "Hotel room smells fresh with a hint of Jasmine"
 
@@ -478,6 +498,8 @@ t "Mmmm... I wish my own room at home smells like this."
 t "...Click?"
 
 "She locked me out... Getting dressed probably"
+
+#animation code
 
 scene bg shower1 with Dissolve (1)
 $ renpy.pause(1.0)
@@ -497,6 +519,7 @@ k "You pervert!... How did you get into my room? I should call the security and 
 t" But... This is MY room, See? I have a card key."
 
 scene bg black with Dissolve(.25)
+scene bg hotelroom with Dissolve(.25)
 show tyler at left with Dissolve(.25)
 show kathy angry at right with Dissolve(.25)
 
@@ -505,6 +528,8 @@ k "Oh...? let me see... your card key says that you are in room 319. That's next
 t "What? No way, you're the one mistaken, see...?" 
 
 #(Kathy fades, reveal room 316)
+
+scene bg room316
 
 show tyler shocked with Dissolve(.25)
 
@@ -555,6 +580,8 @@ t"Phew... I must be jetlagged to mix up the rooms like that, I should get a quic
 scene bg black with Dissolve(1)
 
 centered "1 May 3:20 PM - Museum"
+
+scene bg museum
 
 show tyler angry with Dissolve(.25)
 
@@ -738,7 +765,11 @@ t "If that's all officer... I'll be on my way..."
 
 #Screen Fade out
 
+scene bg black with Dissolve(1)
+
 #2 May 9:00 AM - Hotel lobby
+
+scene bg lobby
 
 t "Hey Kathy"
 
@@ -761,6 +792,8 @@ k "- No buts! Off we go to the mall!"
 "Well... darn, I hope I won't have to carry much clothes..."
 
 #Screen Fade out -Play Date Scene
+
+scene bg black with Dissolve(1)
 
 #2 May 4:00 PM - Hotel door
 
@@ -816,7 +849,11 @@ t "I Guess I should meet Selena at the museum now."
 
 #Screen Fade out
 
+scene bg black with Dissolve(1)
+
 #2 May 10:00 PM - Museum
+
+scene bg museum
 
 t "Hmmm... looks like nothing's happening today too huh? The idea sounds a lot more exciting... but in reality, there is nothing exciting about waiting for hours, is there?"
 
@@ -838,7 +875,11 @@ s "See ya."
 
 #Screen Fade out
 
+scene bg black with Dissolve(1)
+
 #2 May 11:00 PM - Hotel room
+
+scene bg hotelroom
 
 t "Hmm? Kathy's room door is open, hmm... Maybe I'll thank her properly for the necklace."
 
@@ -860,7 +901,11 @@ t"What are they doing in Kathy's room?"
 
 #Screen Fade out
 
+scene bg black(1)
+
 #3 May 10:30 AM - Museum
+
+scene bg museum
 
 s "Mornin!"
 
@@ -913,6 +958,8 @@ t "I'll be back soon Selena."
 s "Yeah, sure."
 
 #Screen Fade out
+
+scene bg black with Dissolve(1)
 
 #Museum (outside)
 
@@ -989,6 +1036,8 @@ t "Ugh..."
 k "Sweet dreams Mr. Fox"
 
 #Screen Fade out
+
+scene bg black with Dissolve(1)
 
 #Place and time... Unknown
 
