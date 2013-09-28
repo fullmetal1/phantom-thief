@@ -57,15 +57,201 @@ label start:
 
 # opening animation
 
-scene bg opening1 with Dissolve (.5)
+scene bg opening1 with Dissolve (.25)
 
-scene bg opening2 with Dissolve (.5)
+scene bg opening2 with Dissolve (.25)
 
-scene bg opening3 with Dissolve (.5)
+scene bg opening3 with Dissolve (.25)
 
-scene bg opening4 with Dissolve (.5)
+scene bg opening4 with Dissolve (.25)
 
-scene bg opening5 with Dissolve (.5)
+scene bg opening5 with Dissolve (.25)
+
+scene bg opening6 with Dissolve (.25)
+
+scene bg opening7 with Dissolve (.25)
+
+scene bg opening8 with Dissolve (.25)
+
+scene bg opening9 with Dissolve (.25)
+
+scene bg opening10 with Dissolve (.25)
+
+scene bg opening11 with Dissolve (.25)
+
+scene bg opening12 with Dissolve (.25)
+
+scene bg opening13 with Dissolve (.25)
+
+scene bg opening14 with Dissolve (.25)
+
+scene bg opening15 with Dissolve (.25)
+
+scene bg opening16 with Dissolve (.25)
+
+scene bg opening17 with Dissolve (.25)
+
+scene bg opening18 with Dissolve (.25)
+
+scene bg opening19 with Dissolve (.25)
+
+scene bg opening20 with Dissolve (.25)
+
+scene bg opening21 with Dissolve (.25)
+
+scene bg opening22 with Dissolve (.25)
+
+scene bg opening23 with Dissolve (.25)
+
+scene bg opening24 with Dissolve (.25)
+
+scene bg opening25 with Dissolve (.25)
+
+scene bg opening26 with Dissolve (.25)
+
+scene bg opening27 with Dissolve (.25)
+
+scene bg opening28 with Dissolve (.25)
+
+scene bg opening29 with Dissolve (.25)
+
+scene bg opening30 with Dissolve (.25)
+
+scene bg opening31 with Dissolve (.25)
+
+scene bg opening32 with Dissolve (.25)
+
+scene bg opening33 with Dissolve (.25)
+
+scene bg opening34 with Dissolve (.25)
+
+scene bg opening35 with Dissolve (.25)
+
+scene bg opening36 with Dissolve (.25)
+
+scene bg opening37 with Dissolve (.25)
+
+scene bg opening38 with Dissolve (.25)
+
+scene bg opening39 with Dissolve (.25)
+
+scene bg opening40 with Dissolve (.25)
+
+scene bg opening41 with Dissolve (.25)
+
+scene bg opening42 with Dissolve (.25)
+
+scene bg opening43 with Dissolve (.25)
+
+scene bg opening44 with Dissolve (.25)
+
+scene bg opening45 with Dissolve (.25)
+
+scene bg opening46 with Dissolve (.25)
+
+scene bg opening47 with Dissolve (.25)
+
+scene bg opening48 with Dissolve (.25)
+
+scene bg opening49 with Dissolve (.25)
+
+scene bg opening50 with Dissolve (.25)
+
+scene bg opening51 with Dissolve (.25)
+
+scene bg opening52 with Dissolve (.25)
+
+scene bg opening53 with Dissolve (.25)
+
+scene bg opening54 with Dissolve (.25)
+
+scene bg opening55 with Dissolve (.25)
+
+scene bg opening56 with Dissolve (.25)
+
+scene bg opening57 with Dissolve (.25)
+
+scene bg opening58 with Dissolve (.25)
+
+scene bg opening59 with Dissolve (.25)
+
+scene bg opening60 with Dissolve (.25)
+
+scene bg opening61 with Dissolve (.25)
+
+scene bg opening62 with Dissolve (.25)
+
+scene bg opening63 with Dissolve (.25)
+
+scene bg opening64 with Dissolve (.25)
+
+scene bg opening65 with Dissolve (.25)
+
+scene bg opening66 with Dissolve (.25)
+
+scene bg opening67 with Dissolve (.25)
+
+scene bg opening68 with Dissolve (.25)
+
+scene bg opening69 with Dissolve (.25)
+
+scene bg opening70 with Dissolve (.25)
+
+scene bg opening71 with Dissolve (.25)
+
+scene bg opening72 with Dissolve (.25)
+
+scene bg opening73 with Dissolve (.25)
+
+scene bg opening74 with Dissolve (.25)
+
+scene bg opening75 with Dissolve (.25)
+
+scene bg opening76 with Dissolve (.25)
+
+scene bg opening77 with Dissolve (.25)
+
+scene bg opening78 with Dissolve (.25)
+
+scene bg opening79 with Dissolve (.25)
+
+scene bg opening80 with Dissolve (.25)
+
+scene bg opening80 with Dissolve (.25)
+
+scene bg opening81 with Dissolve (.25)
+
+scene bg opening82 with Dissolve (.25)
+
+scene bg opening83 with Dissolve (.25)
+
+scene bg opening84 with Dissolve (.25)
+
+scene bg opening85 with Dissolve (.25)
+
+scene bg opening86 with Dissolve (.25)
+
+scene bg opening87 with Dissolve (.25)
+
+scene bg opening88 with Dissolve (.25)
+
+scene bg opening89 with Dissolve (.25)
+
+scene bg opening90 with Dissolve (.25)
+
+scene bg opening91 with Dissolve (.25)
+
+scene bg opening92 with Dissolve (.25)
+
+scene bg opening93 with Dissolve (.25)
+
+scene bg opening94 with Dissolve (.25)
+
+scene bg opening95 with Dissolve (.25)
+
+scene bg opening96 with Dissolve (.25)
+
+scene bg openingfinal with Dissolve (.25)
     
 scene bg black with Dissolve(1)
 
