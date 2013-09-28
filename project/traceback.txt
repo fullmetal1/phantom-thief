@@ -1,8 +1,8 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 540, in script
-IOError: Couldn't find file 'kathypouting.png'.
+  File "game/script.rpy", line 198, in script
+IOError: Couldn't find file 'openign24.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -55,7 +55,7 @@ Full traceback:
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
   File "C:\Program Files (x86)\renpy-6.15.7-sdk\renpy\loader.py", line 411, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'kathypouting.png'.
+IOError: Couldn't find file 'openign24.png'.
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.15.7.374
