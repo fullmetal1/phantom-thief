@@ -1,4 +1,4 @@
-Sat Sep 28 15:04:50 2013
+Sat Sep 28 15:08:23 2013
 Windows-7-6.1.7601-SP1
 Ren'Py 6.15.7.374
 The pantom tjief 0.001
@@ -143,16 +143,16 @@ Texture testing:
 - 1024px textures work.
 - 2048px textures work.
 Performance test:
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
 
 Windowed mode.
 Screen sizes: virtual=(1136, 640) physical=(1136, 640)
-- Target is 5 frames in 0.333333333333 seconds.
-- Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.008000 seconds.
-- Frame drawn at 0.012000 seconds.
-- Frame drawn at 0.016000 seconds.
-- Frame drawn at 0.025000 seconds.
-- 0.025000 seconds to render 5 frames.
+- Frame drawn at 0.101000 seconds.
+- Frame drawn at 0.137000 seconds.
+- Frame drawn at 0.147000 seconds.
+- Frame drawn at 0.152000 seconds.
+- 0.152000 seconds to render 5 frames.
 Deallocating textures.
 Done deallocating textures.
 About to quit GL.
