@@ -1,4 +1,4 @@
-Sat Sep 28 15:08:23 2013
+Sat Sep 28 16:17:50 2013
 Windows-7-6.1.7601-SP1
 Ren'Py 6.15.7.374
 The pantom tjief 0.001
@@ -148,11 +148,11 @@ Performance test:
 
 Windowed mode.
 Screen sizes: virtual=(1136, 640) physical=(1136, 640)
-- Frame drawn at 0.101000 seconds.
-- Frame drawn at 0.137000 seconds.
-- Frame drawn at 0.147000 seconds.
-- Frame drawn at 0.152000 seconds.
-- 0.152000 seconds to render 5 frames.
+- Frame drawn at 0.079000 seconds.
+- Frame drawn at 0.090000 seconds.
+- Frame drawn at 0.095000 seconds.
+- Frame drawn at 0.097000 seconds.
+- 0.097000 seconds to render 5 frames.
 Deallocating textures.
 Done deallocating textures.
 About to quit GL.
