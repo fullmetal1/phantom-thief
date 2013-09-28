@@ -2,6 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/options.rpy", line 75: non-keyword arg after keyword arg
+File "game/script.rpy", line 563: expected 'simple_expression' not found.
+    show kathy pouting with at right Dissolve(.25)
+                            ^
 
 Ren'Py Version: Ren'Py 6.15.7.374

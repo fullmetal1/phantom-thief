@@ -1,7 +1,7 @@
-Mon Sep 16 13:59:16 2013
+Sat Sep 28 14:10:18 2013
 Windows-7-6.1.7601-SP1
 Ren'Py 6.15.7.374
-The pantom tjief 0.001
+ 
 
 Couldn't import angle renderer:
 Traceback (most recent call last):
@@ -11,7 +11,7 @@ ImportError: DLL load failed: The specified module could not be found.
 Unknown renderer: angle
 
 Windowed mode.
-Screen sizes: virtual=(1136, 640) physical=(1136, 640)
+Screen sizes: virtual=(800, 600) physical=(854, 641)
 Vendor: 'Intel'
 Renderer: 'Intel(R) HD Graphics Family'
 Version: '3.1.0 - Build 8.15.10.2418'
@@ -142,22 +142,14 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Performance test:
-- Target is 5 frames in 0.333333333333 seconds.
-- Frame drawn at 0.000000 seconds.
 
 Windowed mode.
-Screen sizes: virtual=(1136, 640) physical=(1136, 640)
-- Frame drawn at 0.096000 seconds.
-- Frame drawn at 0.119000 seconds.
-- Frame drawn at 0.128000 seconds.
-- Frame drawn at 0.133000 seconds.
-- 0.133000 seconds to render 5 frames.
-Deallocating textures.
-DonThe window was restored.
+Screen sizes: virtual=(800, 600) physical=(854, 641)
+The window was minimized.
+The window was restored.
 
 Windowed mode.
-Screen sizes: virtual=(1136, 640) physical=(1136, 640)
+Screen sizes: virtual=(800, 600) physical=(854, 641)
 Deallocating textures.
 Done deallocating textures.
 About to quit GL.

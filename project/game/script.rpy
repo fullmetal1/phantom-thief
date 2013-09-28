@@ -486,6 +486,8 @@ menu:
 
 #Screen Fade out
 
+scene bg black with Dissolve (1)
+
 #Scene change - Room door 319
 
 scene bg black with Dissolve(5)
@@ -546,19 +548,19 @@ t "What? No way, you're the one mistaken, see...?"
 
 #(Kathy fades, reveal room 316)
 
-scene bg room316
+scene bg door316
 
-show tyler shocked with Dissolve(.25)
+show tyler shocked at left with Dissolve(.25)
 
 "...Wha? 316?? but... but... I checked! I double checked!"
 
-show kathy frustrated with Dissolve(.25)
+show kathy frustrated at right with Dissolve(.25)
 
 k "...Okay mister... I don't care how you got in, but you owe me... you owe me BIG."
 
 t "Okay okay, it's my fault, I'm sorry."
 
-show kathy pouting with Dissolve(.25)
+show kathy pouting at right with Dissolve(.25)
 
 k "Sorry ain't gonna cut it Tyler."
 
